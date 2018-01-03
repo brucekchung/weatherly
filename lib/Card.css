@@ -1,6 +1,8 @@
 
 .card {
   border: 1px solid black;
-  background-color: teal;
-  width: 20%;
+  background-color: salmon;
+  width: 200px;
+  margin: 20px;
+  display: inline-block;
 }
