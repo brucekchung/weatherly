@@ -1,0 +1,35 @@
+.srch-input {
+  font-size: 18px;
+  /*color: white;*/
+  border: 0;
+  height: 30px;
+  width: 200px;
+  /*background-color: #010C3A;*/
+  /*opacity: 0.5;*/
+  box-sizing: border-box; 
+  padding: 0 5px;
+
+
+}
+
+::-webkit-input-placeholder { 
+  /*color: white;*/
+  font-size: 18px;
+  /*padding-left: 5px;*/
+}
+::-moz-placeholder { 
+  color: white;
+}
+:-ms-input-placeholder { 
+  color: white;
+}
+:-moz-placeholder { 
+  color: white;
+}
+.srch-btn {
+  font-size: 18px;
+  border: none;
+  border-left: 1px solid gray;
+  height: 30px;
+  padding: 0 10px;
+}
