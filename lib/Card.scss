@@ -1,20 +1,28 @@
 
-/*.card {
-  border: 1px solid #E7FCAE;
-  background-color: #67BA91;
-  width: 200px;
-  margin: 20px;
-  display: inline-block;
-}*/
-
 .seven-hour {
   background-color: magenta;
-  width: 200px;
-  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  img {
+    height: 30px;
+  }
 }
 
 .ten-day {
   background-color: pink;
-  width: 300px;
-  height: 200px;
+  border: 1px solid black;
+  width: 20%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  img, 
+  h3 {
+    margin: 10px;
+  }
+
 }
+
