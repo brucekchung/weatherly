@@ -55,5 +55,9 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "@brucekchung/complete-me": "git+https://github.com/brucekchung/complete-me.git",
+    "complete-me": "git+https://github.com/brucekchung/complete-me.git"
   }
 }
