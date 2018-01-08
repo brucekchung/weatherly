@@ -5,15 +5,16 @@ import Welcome from '../lib/Welcome.js';
 
 describe('Welcome Page', () => {
   let wrapper;
-  const props = {
-    
-  }
+
   beforeEach(() => {
-    wrapper = shallow(<Welcome {...props} />)
+    wrapper = shallow(<Welcome />)
   })
 
   it('should exist', () => {
     expect(wrapper).toBeDefined()
+  });
+  it('shold render the Search component', () => {
+    expect(wrapper.find(Search)).toHaveLength(1)
   })
 
 })
