@@ -20,15 +20,15 @@ describe('Card', () => {
   })
 
   it('should have three nodes', () => {
-    //console.log(wrapper.debug())
     expect(wrapper.find('.sevenHour').children().length).toEqual(3)
   })
 
-  it.skip('should have a temperature of 90', () => {
+  it.skip('should be able to receive props', () => {
     props.temp = 90
     wrapper = shallow(<Card {...props} />)
 
-    expect(wrapper)
+    console.log(wrapper.debug())
+    //expect(wrapper.find('.sevenHour').children())
   })
 
 })
