@@ -3,7 +3,7 @@ import { mount, shallow } from 'enzyme'
 import App from '../lib/App.js'
 import Search from '../lib/Search.js'
 import Welcome from '../lib/Welcome.js'
-import 'jest-localstorage-mock';
+// import 'jest-localstorage-mock';
 
 describe.only('App', () => {
   let wrapper;
