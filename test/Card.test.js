@@ -30,5 +30,4 @@ describe('Card', () => {
     console.log(wrapper.debug())
     //expect(wrapper.find('.sevenHour').children())
   })
-
 })
