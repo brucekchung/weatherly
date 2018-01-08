@@ -12,9 +12,9 @@ describe('Welcome Page', () => {
 
   it('should exist', () => {
     expect(wrapper).toBeDefined()
-  });
-  it('shold render the Search component', () => {
+  })
+  
+  it('should render the Search component', () => {
     expect(wrapper.find(Search)).toHaveLength(1)
   })
-
 })
