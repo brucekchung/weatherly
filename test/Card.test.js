@@ -19,7 +19,19 @@ describe('Card', () => {
     expect(wrapper).toBeDefined()
   })
 
+  it('should have a class name', () => {
+    expect(wrapper.find('.sevenHour')).toBeDefined()
+  })
+
   it('should have three nodes', () => {
     expect(wrapper.find('.sevenHour').children().length).toEqual(3)
+  })
+
+  it('should receive data from the props object', () => {
+    wrapper = mount(<Card {...props} />)
+    expect(wrapper.props().type).toBeDefined();
+    expect(wrapper.props().time).toBeDefined();
+    expect(wrapper.props().image).toBeDefined();
+    expect(wrapper.props().temp).toBeDefined();
   })
 })
