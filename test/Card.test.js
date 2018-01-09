@@ -6,9 +6,9 @@ describe('Card', () => {
   let wrapper;
   const props = {
                   type: 'sevenHour',
-                  time: 7,
+                  time:'7',
                   image: 'asdf',
-                  temp: 50
+                  temp: '50'
                 };
 
   beforeEach(() => {
@@ -21,13 +21,5 @@ describe('Card', () => {
 
   it('should have three nodes', () => {
     expect(wrapper.find('.sevenHour').children().length).toEqual(3)
-  })
-
-  it.skip('should be able to receive props', () => {
-    props.temp = 90
-    wrapper = shallow(<Card {...props} />)
-
-    console.log(wrapper.debug())
-    //expect(wrapper.find('.sevenHour').children())
   })
 })

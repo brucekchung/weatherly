@@ -49,4 +49,9 @@ describe('App', () => {
 
     //console.log(wrapper.debug())
   })
+
+  it('should have a getForecast and setLocation method', () => {
+    expect(typeof wrapper.instance().getForecast).toEqual('function');
+    expect(typeof wrapper.instance().setLocation).toEqual('function');
+  })
 })
