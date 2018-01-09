@@ -6,9 +6,9 @@ describe('Card', () => {
   let wrapper;
   const props = {
                   type: 'sevenHour',
-                  time: 7,
+                  time:'7',
                   image: 'asdf',
-                  temp: 50
+                  temp: '50'
                 };
 
   beforeEach(() => {
@@ -19,15 +19,19 @@ describe('Card', () => {
     expect(wrapper).toBeDefined()
   })
 
+  it('should have a class name', () => {
+    expect(wrapper.find('.sevenHour')).toBeDefined()
+  })
+
   it('should have three nodes', () => {
     expect(wrapper.find('.sevenHour').children().length).toEqual(3)
   })
 
-  it.skip('should be able to receive props', () => {
-    props.temp = 90
-    wrapper = shallow(<Card {...props} />)
-
-    console.log(wrapper.debug())
-    //expect(wrapper.find('.sevenHour').children())
+  it('should receive data from the props object', () => {
+    wrapper = mount(<Card {...props} />)
+    expect(wrapper.props().type).toBeDefined();
+    expect(wrapper.props().time).toBeDefined();
+    expect(wrapper.props().image).toBeDefined();
+    expect(wrapper.props().temp).toBeDefined();
   })
 })
