@@ -6,7 +6,7 @@ import Header from '../lib/Header.js'
 import SevenHour from '../lib/SevenHour.js'
 import TenDay from '../lib/TenDay.js'
 import Welcome from '../lib/Welcome.js'
-// import 'jest-localstorage-mock';
+import 'jest-localstorage-mock';
 
 describe('App', () => {
   let wrapper;
@@ -49,6 +49,4 @@ describe('App', () => {
 
     //console.log(wrapper.debug())
   })
-
-
 })

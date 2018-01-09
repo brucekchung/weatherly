@@ -1,11 +1,6 @@
 import React from 'react'
 import { mount, shallow } from 'enzyme'
-import App from '../lib/App.js'
 import Search from '../lib/Search.js'
-import Header from '../lib/Header.js'
-import SevenHour from '../lib/SevenHour.js'
-import TenDay from '../lib/TenDay.js'
-import Welcome from '../lib/Welcome.js'
 import CompleteMe from '../node_modules/complete-me/lib/Trie.js';
 import 'jest-localstorage-mock';
 
