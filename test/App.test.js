@@ -46,7 +46,10 @@ describe('App', () => {
     expect(wrapper.find(Header)).toHaveLength(1)
     expect(wrapper.find(SevenHour)).toHaveLength(1)
     expect(wrapper.find(TenDay)).toHaveLength(1)
+  })
 
-    //console.log(wrapper.debug())
+  it('should have a getForecast and setLocation method', () => {
+    expect(typeof wrapper.instance().getForecast).toEqual('function');
+    expect(typeof wrapper.instance().setLocation).toEqual('function');
   })
 })
