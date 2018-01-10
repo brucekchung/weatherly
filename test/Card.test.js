@@ -34,4 +34,10 @@ describe('Card', () => {
     expect(wrapper.props().image).toBeDefined();
     expect(wrapper.props().temp).toBeDefined();
   })
+
+  it('should render the props it is passed', () => {
+    expect(wrapper.find('h3').length).toEqual(2)
+    expect(wrapper.find('h3').first().text()).toEqual('7')
+    expect(wrapper.find('h3').at(1).text()).toEqual('50')
+  })
 })
