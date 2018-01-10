@@ -27,8 +27,7 @@ describe('App', () => {
   })
 
   it('should only render the Welcome component on page load', () => {
-    expect(wrapper.state('isWelcome')).toEqual(true)
-    expect(wrapper.find('.cold').children().length).toEqual(1)
+    expect(wrapper.find(Welcome).length).toEqual(1)
   })
 
   it('should render Search, Header, SevenHour, and TenDay after "setLocation" is called', () => {
